@@ -18,4 +18,11 @@ public class BasicCalculator {
     public int foo() {
         return numberList.size()+1;
     }
+
+    public int divide(int a, int b) throws UnableToDivideByZeroException {
+        if(b == 0) {
+            throw new UnableToDivideByZeroException();
+        }
+        return a/b;
+    }
 }
